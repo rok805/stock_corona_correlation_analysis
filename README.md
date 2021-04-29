@@ -1,3 +1,24 @@
+# stock_crawling and analysis with corona
+
+#### 코스피 주식을 수집하고, 코로나 데이터를 불러와 이들간의 상관성에 대한 EDA를 진행합니다.
+* 코스피 데이터 크롤링.
+
+stock_crawler 폴더에 담긴 py파일은 네이버 주식 사이트에 게재된 코스피 등록 회사들의 주가를 지정한 기간만큼 수집하는 크롤러입니다.
+
+stock_crawling 클래스로 구현되어 있으며, 네이버 주식 페이지에서 시작하도록 되어 있습니다. 크롤링을 위하여 반드시 webdriver.exe 파일이 current directory에 설치가 되어 있어야 합니다.
+
+start(): webdriver 를 활용하여 브라우저에 입장합니다.
+company(): 회사별로 주식 페이지에 대한 url을 수집합니다.
+stock(): 회사별로 주식 정보가 담긴 테이블 페이지를 webdriver를 활용해 열고, 회사이름, 업종, 종가를 수집합니다.
+run(): 위의 함수들을 실행시키는 함수입니다. 리턴 값으로 수집한 주식 데이터가 출력됩니다.
+
+
+
+
+
+
+
+
 ```python
 import pandas as pd
 
