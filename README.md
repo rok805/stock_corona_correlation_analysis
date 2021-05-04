@@ -17,8 +17,6 @@ run(): 위의 함수들을 실행시키는 함수입니다. 리턴 값으로 수
 
 
 
-
-
 ```python
 import pandas as pd
 
